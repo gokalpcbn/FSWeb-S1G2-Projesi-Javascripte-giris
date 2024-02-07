@@ -52,10 +52,10 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
 
-function carpma(a,b) {
-  const sonuc = a*b;
+function carpma(a, b) {
+  const sonuc = a * b;
   return sonuc;
-  console.log(carpma(7,4));
+  console.log(carpma(7, 4));
 }
 
 /* Görev 2 : Köpeğin Yaşı */
@@ -68,8 +68,8 @@ Aşağıdakileri yap:
  */
 
 function kopeginYasi(yas) {
-    const gercekYas = yas * 7;
-    return gercekYas;
+  const gercekYas = yas * 7;
+  return gercekYas;
 }
 
 /* Görev 3 */
@@ -83,13 +83,22 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yap.
  - kaybetme durumunda "Kaybettin!" dönmeli
  - beraberlikte "Beraberlik" dönmeli
 
-OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
+OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur
+.
 */
 
 function oyun(oyuncu, bilgisayar) {
-  if((oyuncu === "Taş" && bilgisayar === "Makas")|| (oyuncu === "Makas" && bilgisayar === "Kağıt")|| (oyuncu === "Kağıt" && bilgisayar === "Taş")){
+  if (
+    (oyuncu === "Taş" && bilgisayar === "Makas") ||
+    (oyuncu === "Makas" && bilgisayar === "Kağıt") ||
+    (oyuncu === "Kağıt" && bilgisayar === "Taş")
+  ) {
     return "Kazandın!";
-  } else if((oyuncu === "Taş" && bilgisayar === "Taş")|| (oyuncu === "Makas" && bilgisayar === "Makas")|| (oyuncu === "Kağıt" && bilgisayar === "Kağıt")) {
+  } else if (
+    (oyuncu === "Taş" && bilgisayar === "Taş") ||
+    (oyuncu === "Makas" && bilgisayar === "Makas") ||
+    (oyuncu === "Kağıt" && bilgisayar === "Kağıt")
+  ) {
     return "Beraberlik";
   } else {
     return "Kaybettin!";
@@ -128,7 +137,6 @@ function milDonusturucu(kilometre) {
   return mil;
 }
 
-
 //Görev 4b - Santimetreden Feet
 /*
 Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
@@ -140,7 +148,7 @@ Google'da arama ipucu: "feet cm dönüştürme"
 */
 
 function feetDonusturucu(santimetre) {
-  const feet = santimetre * 0.393700;
+  const feet = santimetre * 0.3937;
   return feet;
 }
 
